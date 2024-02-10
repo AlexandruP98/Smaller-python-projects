@@ -1,3 +1,6 @@
+#this is a program that will give the user a break when he needs it, it will prompt him for the minutes, convert his answer into minutes, and play a small alarm when the time expires, if the user needs another break
+#he can prompt the program "yes" or "y" to be asked again
+
 import time
 import winsound
 
