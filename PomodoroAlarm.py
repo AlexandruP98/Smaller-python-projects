@@ -6,7 +6,12 @@ import winsound
 
 
 while True:
-    seconds = int(input('How many minutes would you like a break for? '))
+    while True:
+        try:
+            seconds = int(input('How many minutes would you like a timer for? '))
+            break
+        except ValueError:
+            print('Please type a number')
     minutes = seconds * 60
     time.sleep(minutes)
     winsound.PlaySound('sound',winsound.SND_FILENAME)
